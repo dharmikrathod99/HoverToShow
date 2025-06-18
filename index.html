@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <ul>
+        <li>Apple...</li>
+        <li>Samsung...</li>
+        <li>OnePlus...</li>
+        <li>Google...</li>
+        <li>Sony...</li>
+        <li>Dell...</li>
+        <li>MacBook...</li>
+        <li>HP...</li>
+        <li>Asus...</li>
+        <li>Lenovo...</li>
+        <li>Canon...</li>
+        <li>Nikon...</li>
+        <li>Bose...</li>
+        <li>JBL...</li>
+        <li>LG...</li>
+        <li>Samsung...</li>
+        <li>Sony...</li>
+        <li>Xbox...</li>
+        <li>Nintendo...</li>
+        <li>Apple...</li>
+        <li>Samsung...</li>
+        <li>Fitbit...</li>
+        <li>Apple...</li>
+        <li>Garmin...</li>
+        <li>Logitech...</li>
+        <li>Razer...</li>
+        <li>Corsair...</li>
+        <li>SteelSeries...</li>
+        <li>TP-Link...</li>
+        <li>Google...</li>
+        <li>Amazon...</li>
+        <li>Ring...</li>
+        <li>DJI...</li>
+        <li>GoPro...</li>
+        <li>Anker...</li>
+        <li>Samsung...</li>
+        <li>WD...</li>
+        <li>Seagate...</li>
+        <li>Apple...</li>
+        <li>Realme...</li>
+        <li>Motorola...</li>
+        <li>Lava...</li>
+        <li>Xiaomi...</li>
+        <li>Poco...</li>
+        <li>Vivo...</li>
+        <li>Oppo...</li>
+        <li>Infinix...</li>
+        <li>Sony...</li>
+        <li>Asus...</li>
+        <li>Nokia...</li>
+        <li>Tecno...</li>
+        <li>boAt...</li>
+        <li>Noise...</li>
+        <li>Fire-Boltt...</li>
+        <li>Redmi...</li>
+    </ul>
+
+    <script>
+        $(function () {
+            const fullNames = [
+                "Apple iPhone 15 Pro",
+                "Samsung Galaxy S24 Ultra",
+                "OnePlus 12",
+                "Google Pixel 8 Pro",
+                "Sony WH-1000XM5",
+                "Dell XPS 13",
+                "MacBook Air M3",
+                "HP Spectre x360",
+                "Asus ROG Zephyrus G14",
+                "Lenovo ThinkPad X1 Carbon",
+                "Canon EOS R6 Mark II",
+                "Nikon Z8",
+                "Bose QuietComfort Ultra",
+                "JBL Charge 5",
+                "LG OLED C3 TV",
+                "Samsung QLED Q90",
+                "Sony PlayStation 5",
+                "Xbox Series X",
+                "Nintendo Switch OLED",
+                "Apple iPad Pro M4",
+                "Samsung Galaxy Tab S9+",
+                "Fitbit Charge 6",
+                "Apple Watch Series 9",
+                "Garmin Forerunner 965",
+                "Logitech MX Master 3S",
+                "Razer DeathAdder V3",
+                "Corsair K95 RGB Platinum",
+                "SteelSeries Arctis Nova Pro",
+                "TP-Link Archer AX90 Router",
+                "Google Nest Hub Max",
+                "Amazon Echo Show 10",
+                "Ring Video Doorbell Pro 2",
+                "DJI Mini 4 Pro Drone",
+                "GoPro HERO12 Black",
+                "Anker PowerCore 20000",
+                "Samsung T7 Shield SSD",
+                "WD My Passport 5TB",
+                "Seagate FireCuda 530",
+                "Apple AirPods Pro 2",
+                "Realme Narzo 70 Pro",
+                "Motorola Edge 50 Fusion",
+                "Lava Blaze Curve 5G",
+                "Xiaomi Pad 6",
+                "Poco X6 Pro",
+                "Vivo V30 Pro",
+                "Oppo Reno 11 Pro",
+                "Infinix Zero 30",
+                "Sony Xperia 1 V",
+                "Asus Zenfone 10",
+                "Nokia G42 5G",
+                "Tecno Phantom V Flip",
+                "boAt Airdopes 441",
+                "Noise ColorFit Ultra 3",
+                "Fire-Boltt Phoenix",
+                "Redmi Buds 5 Pro"
+            ];
+
+            $('ul').on('mouseenter', 'li', function () {
+                const idx = $(this).index();
+                $(this).text(fullNames[idx]);
+                // console.log(this)
+            })
+        });
+        // console.log(this)
+    </script>
+</body>
+
+</html>
+// .on('mouseleave', 'li', function () {
+//     const idx = $(this).index();
+//     const first = fullNames[idx].split(' ')[0];
+//     $(this).text(first + '...');
+// });
